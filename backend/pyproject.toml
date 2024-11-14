@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["harsehajx <harsehaj@unc.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.1"
+openai = "^1.54.3"
+serpapi = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
