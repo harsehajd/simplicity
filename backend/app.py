@@ -7,7 +7,7 @@ from pydantic import BaseModel # why pydantic? faster with fastapi & handles env
 from pydantic_settings import BaseSettings, SettingsConfigDict #takes settings from .env file
 from openai import OpenAI
 from fastapi.middleware.cors import CORSMiddleware
-from serpapi.google_search import GoogleSearch 
+from serpapi import GoogleSearch 
 from bs4 import BeautifulSoup #helpful for parsing the sources
 import requests
 from urllib.parse import urlparse
