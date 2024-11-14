@@ -1,9 +1,3 @@
-running the backend:
-
-cd backend
-fastapi dev 
-
-running the frontend:
-
+to run:
 cd frontend
 npm run dev
