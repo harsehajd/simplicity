@@ -6,7 +6,7 @@ authors = ["harsehajx <harsehaj@unc.edu>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.11"
 pydantic = "^2.9.2"
 pydantic-settings = "^2.6.1"
 openai = "^1.54.3"
