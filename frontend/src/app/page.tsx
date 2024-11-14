@@ -47,7 +47,9 @@ export default function Home() {
     const previews = await Promise.all(
       urls.map(async (url) => {
         try {
-          const res = await fetch(`${process.env.BACKEND_URL}/preview?url=${encodeURIComponent(url)}`);
+          {/** const res = await fetch(`http://127.0.0.1:8000/preview?url=${encodeURIComponent(url)}`); */}
+          {/** const res = await fetch(`${process.env.BACKEND_URL}/preview?url=${encodeURIComponent(url)}`); */}
+          const res = await fetch('https://simplicity-r6ru.onrender.com/preview?url=${encodeURIComponent(url)}');
           const data = await res.json();
           return { url, title: data.title, description: data.description, loading: false };
         } catch (error) {
@@ -71,7 +73,9 @@ export default function Home() {
     }));
 
     try {
-      const res = await fetch(`${process.env.BACKEND_URL}/chat`, {
+      {/** const res = await fetch('http://127.0.0.1:8000/chat', { */}
+      {/** const res = await fetch(`${process.env.BACKEND_URL}/chat`, { */}
+      const res = await fetch('https://simplicity-r6ru.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ input_message: state.message }),
