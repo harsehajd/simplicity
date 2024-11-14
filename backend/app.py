@@ -46,7 +46,7 @@ async def lifespan(app: FastAPI): #taking in app, which is the fastapi instance
 app = FastAPI(lifespan=lifespan) 
 app.add_middleware( #allows connections to frontend
     CORSMiddleware,
-    allow_origins=["https://simplicity-r6ru.onrender.com"],  
+    allow_origins=["http://localhost:3000"],  
     allow_credentials=True,
     allow_methods=["*"],  
     allow_headers=["*"],
